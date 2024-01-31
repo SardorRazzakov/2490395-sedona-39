@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Сардор Раззаков](https://up.htmlacademy.ru/htmlcss/39/user/2490395).
-* Наставник: [Ольга Тюлихова]{https://htmlacademy.ru/profile/id523263}.
-
+* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
+* Сайт: [Мой проект Седона](https://sardorrazzakov.github.io/2490395-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
