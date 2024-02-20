@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -29,17 +30,17 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/search-icon.svg" alt="иконка поиска" width="18" height="18">
+              <span class="visually hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <img src="images/heart-icon.svg" alt="иконка лайка" width="18" height="17">
-              <img src="images/12.png" alt="изображение 12" width="20" height="20">
+              <span class="visually hidden">Избранное</span>
+              <span class="visually hidden">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочю сюда!</a>
+            <a class="navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -52,15 +53,12 @@
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <img src="images/breadcrumbs-icon-home.svg" alt="иконка значка на гланую страницу" width="12" height="12">
               <span class="visually-hidden">
                 Главная
               </span>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <img src="images/breadcrumbs-icon-arrow.svg" alt="иконка стрелки хлебных крощек" width="6.39x"
-              height="9.94">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ol>
@@ -116,6 +114,17 @@
             </ul>
           </fieldset>
 
+          <fieldset class="price-range">
+            <legend class="price-range-title">Стоимость, ₽:</legend>
+            <label class="price-min" for="min">От
+              <input class="price-min-input" type="text" id="min" name="min-price" value="0">
+            </label>
+            <label class="price-max" for="max">До
+              <input class="price-max-input" type="text" id="max" name="max-price" value="9000">
+            </label>
+            <input class="price-range-bar" type="range" min="1" max="10" value="8">
+          </fieldset>
+
           <button class="button button-use-filter" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
@@ -125,15 +134,15 @@
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <img src="images/sorting-arrow.svg" alt="иконка стрелки сортировки" width="11.93" height="7.02">
-        <a class="button button-view-icon" href="#">
-          <img src="images/view-icon-1.svg" alt="Показать карточки" width="16" height="14">
+
+        <a class="button button-view-icon-card active" href="#">
+          <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="button button-view-icon" href="#">
-          <img src="images/view-icon-2.svg" alt="Показать слайд-шоу" width="16" height="14">
+        <a class="button button-view-icon-slide-show" href="#">
+          <span class="visually-hidden">Показать слайд-шоу</span>
         </a>
-        <a class="button button-view-icon" href="#">
-          <img src="images/view-icon-3.svg" alt="Показать списком" width="16" height="14">
+        <a class="button button-view-icon-list" href="#">
+          <span class="visually-hidden">Показать список</span>
         </a>
       </section>
 
@@ -148,12 +157,8 @@
           <b class="product-card-price">от 4000 ₽</b>
           <a class="product-card-detailed-button button" href="#">Подробнее</a>
           <a class="product-card-favourites-button button" href="#">В Избранное </a>
-          <button class="product-card-rank-star-button button" type="submit">
-            <img src="images/catalog/stars-for-1st-hotel.svg" alt="количество звезд отеля 4">
-          </button>
-          <button class="product-card-rank-button button" type="submit">
-            РЕЙТИНГ: 8,5
-          </button>
+          <span class="visually-hidden">количество звезд отеля 4</span>
+          <span class="visually-hidden">РЕЙТИНГ: 8,5</span>
         </li>
 
         <li class="product-card">
@@ -165,12 +170,8 @@
           <b class="product-card-price">От 5000 ₽</b>
           <a class="product-card-detailed-button button" href="#">Подробнее</a>
           <a class="product-card-favourites-button button" href="#">В Избранное </a>
-          <button class="product-card-rank-star-button button" type="submit">
-            <img src="images/catalog/stars-for-2st-hotel.svg" alt="количество звезд отеля 4">
-          </button>
-          <button class="product-card-rank-button button" type="submit">
-            РЕЙТИНГ: 9,2
-          </button>
+          <span class="visually-hidden">количество звезд отеля 4</span>
+          <span class="visually-hidden">РЕЙТИНГ: 9,2</span>
         </li>
 
         <li class="product-card">
@@ -182,12 +183,8 @@
           <b class="product-card-price">От 2500 ₽</b>
           <a class="product-card-detailed-button button" href="#">Подробнее</a>
           <a class="product-card-favourites-button button" href="#">В Избранное </a>
-          <button class="product-card-rank-star-button button" type="submit">
-            <img src="images/catalog/stars-for-3st-hotel.svg" alt="количество звезд отеля 3">
-          </button>
-          <button class="product-card-rank-button button" type="submit">
-            РЕЙТИНГ: 6,9
-          </button>
+          <span class="visually-hidden">количество звезд отеля 3</span>
+          <span class="visually-hidden">РЕЙТИНГ: 6,9</span>
         </li>
 
         <li class="product-card">
@@ -199,12 +196,8 @@
           <b class="product-card-price">От 1500 ₽</b>
           <a class="product-card-detailed-button button" href="#">Подробнее</a>
           <a class="product-card-favourites-button button" href="#">В Избранное </a>
-          <button class="product-card-rank-star-button button" type="submit">
-            <img src="images/catalog/stars-for-4st-hotel.svg" alt="количество звезд отеля 2">
-          </button>
-          <button class="product-card-rank-button button" type="submit">
-            РЕЙТИНГ: 5,0
-          </button>
+          <span class="visually-hidden">количество звезд отеля 2</span>
+          <span class="visually-hidden">РЕЙТИНГ: 5,0</span>
         </li>
       </ul>
 
@@ -231,13 +224,13 @@
       </ul>
 
       <!--Подписка на рассылку-->
-      <section class="subscription">
-        <h2 class="inner-subscription-title">Подпишитесь на рассылку</h2>
-        <pre>Только полезная информация и никакого спама,<br>
-          честное бойскаутское!</pre>
+      <section class="page-subscription">
+        <h2 class="page-subscription-title">Подпишитесь на рассылку</h2>
+        <p class="page-subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <label class="visually-hidden" for="email">E-mail</label>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" type="email" name="subscription-mail" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
+          <input class="field" type="email" id="email" name="subscription-mail" placeholder="Ваш e-mail" required>
+          <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -249,17 +242,17 @@
         <ul class="socials-media-list">
           <li class="socials-media-item">
             <a class="button" href="#">
-              <img src="images/vk-icon.svg" alt="логотип ВК" width="24" height="14">
+              <span class="visually-hidden">VK</span>
             </a>
           </li>
           <li class="socials-media-item">
             <a class="button" href="#">
-              <img src="images/telegram-icon.svg" alt="логотип Телеграма" width="18" height="15.1">
+              <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="socials-media-item">
             <a class="button" href="#">
-              <img src="images/youtube-icon.svg" alt="логотип Ютуба" width="22" height="17">
+              <span class="visually-hidden">YouTube</span>
             </a>
           </li>
         </ul>
@@ -274,7 +267,9 @@
 
       <section class="site">
         <h2 class="visually-hidden">Сайт разработчика</h2>
-        <img class="logo-footer" src="images/logo-html-academy.svg" alt="Посетить сайт разработчика HTML Academy">
+        <a href="https://htmlacademy.ru/">
+          <img class="logo-footer" src="images/logo-html-academy.svg" alt="Посетить сайт разработчика HTML Academy">
+        </a>
       </section>
     </footer>
 

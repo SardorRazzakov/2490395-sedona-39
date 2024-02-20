@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* Button */
+.button {
+  font-size: 16px;
+  line-height: 20p;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.button-search {
+  font-size: 16px;
+  line-height: 20p;
+}
+
+.button-subscribe {
+  font-size: 16px;
+  line-height: 20p;
+  background-color: #82B3D3;
+}
+
+/* Навигация */
+.main-page-header a {
+  color: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-index {
+  background-image: url(../images/36.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* advantages list */
+.advantages-list {
+  text-align: center;
+}
+
+.advantages h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages p {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*advantages title */
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*advantages description */
+.advantages-description {
+  color: #333333;
+}
+
+.advantages-item-dark,
+.advantages-item-dark p {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.advantages-item-the-lightest {
+  background-color: #83B3D31F;
+}
+
+.advantages-item-light {
+  background-color: #83B3D333;
+}
+
+
+
+
+/*service list */
+.service-list {
+  text-align: center;
+}
+
+
+.service h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.service p {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+
+/*service title */
+.service-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*service description */
+.service-description {
+  color: #333333;
+}
+
+.service-item-light {
+  background-color: #83B3D31F;
+}
+
+.hotel-search {
+  text-align: center;
+}
+
+.hotel-search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hotel-search p {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+/*subscription description */
+.page-subscription {
+  background-image: url(../images/subscribe-form-background.jpg);
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+/*subscription title */
+.page-subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+
+/*subscription description */
+.page-subscription-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+/*Форма подписки */
+.field {
+background-color: #F2F2F2;
+}
+
+
+/* Footer */
+.page-footer {
+  text-align: center;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
