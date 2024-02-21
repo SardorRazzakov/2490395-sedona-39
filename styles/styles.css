@@ -29,8 +29,21 @@ body {
 /* Button */
 .button {
   font-size: 16px;
-  line-height: 20p;
+  line-height: 20px;
   font-weight: 700;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.navigation-item .button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: inherit;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -39,28 +52,48 @@ body {
 }
 
 .button-search {
-  font-size: 16px;
-  line-height: 20p;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .button-subscribe {
-  font-size: 16px;
-  line-height: 20p;
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82B3D3;
 }
 
+.button-use-filter {
+  background-color: #82B3D3;
+}
+
+
+
+.button-reset-filter {
+  background-color: rgba(28,28,28,0);
+}
+
+
+.product-card-favourites-button {
+  background-color: #82B3D3;
+}
+
+.product-card-added-to-favourites-button {
+  background-color: #7DB54F;
+}
+
+
 /* Навигация */
 .main-page-header a {
-  color: inherit;
+  color: #000000;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
 }
 
 .main-index {
-  background-image: url(../images/36.jpg);
+  background-image: url(../images/main-index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -111,6 +144,7 @@ body {
 
 .advantages-item-light {
   background-color: #83B3D333;
+
 }
 
 
@@ -206,7 +240,11 @@ body {
 
 /*Форма подписки */
 .field {
-background-color: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  background-color: #F2F2F2;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 
@@ -219,6 +257,181 @@ background-color: #F2F2F2;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+  font-style: normal;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+
+
+
+
+
+/* Catalog  */
+
+
+
+.page-header a {
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.sorting-container {
+  background-image: url(../images/filter-catalog-background.jpg);
+  background-color: #000000;
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 100% auto, cover;
+}
+
+/* Inner-header-title  */
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 16px;
+}
+
+/* Breadcrumbs link */
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Infrastructure title */
+.catalog-hotels-filter-group-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* input */
+.control {
+  line-height: 23px;
+}
+
+/* Title */
+.price-range-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.price-min-input,
+.price-max-input {
+  font-family: "PT Sans", sans-serif;
+  background-color: #F2F2F2;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.price-min,
+.price-max {
+  font-family: "PT Sans", sans-serif;
+  background-color: #F2F2F2;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: lowercase;
+  text-align: right;
+}
+
+.total-of-hotels {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.select-control {
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-view-icon-card-active {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button-view-icon-slide-show {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.button-view-icon-list {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.product-card {
+  background-color: #E6E6E6;
+}
+
+.product-card-link {
+  color:#000000;
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+
+.pagination {
+  text-align: center;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.pagination-current {
+background-color: #F2F2F2;
+color: #000000;
+}
+
+.more {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+
+.page-subscription-inner {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.page-subscription-inner h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.page-subscription-inner p {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
 }
