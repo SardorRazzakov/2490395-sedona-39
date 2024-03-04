@@ -86,6 +86,7 @@ body {
   height: 36px;
   background-color: #82B3D3;
   margin-bottom: 32px;
+  padding: 0;
 
 }
 
@@ -95,6 +96,7 @@ body {
   width: 191px;
   height: 36px;
   background-color: rgba(28, 28, 28, 0);
+  padding: 0;
 }
 
 
@@ -190,6 +192,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  box-sizing:border-box;
 }
 
 
@@ -204,8 +207,8 @@ body {
 
 .advantages p {
   color: #333333;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 400;
   text-align: center;
 }
@@ -262,6 +265,7 @@ body {
   margin: 0;
   padding: 0;
   width: 400px;
+  box-sizing: border-box;
 }
 
 
@@ -438,7 +442,7 @@ body {
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 40px ;
+  padding-top: 40px;
   padding-right: 70px;
   padding-bottom: 30px;
   padding-left: 70px;
@@ -577,7 +581,7 @@ body {
 
 .catalog-hotels-filter-group {
   box-sizing: border-box;
-  width: 160px;
+  width: 280px;
   padding: 0;
   margin: 0;
 }
@@ -619,7 +623,7 @@ body {
 
 
 fieldset {
-  border:0 none;
+  border: 0 none;
 }
 
 /* input */
@@ -629,6 +633,7 @@ fieldset {
 
 .price-range {
   width: 288px;
+  padding: 0;
   margin-right: 70px;
   margin-left: 0;
 }
@@ -662,10 +667,15 @@ fieldset {
 }
 
 
+legend {
+  padding: 0;
+}
+
+
 .hotels-container {
   display: flex;
   justify-content: space-between;
-  margin:50px 70px 40px;
+  margin: 50px 70px 40px;
   box-sizing: border-box;
 }
 
@@ -714,9 +724,7 @@ fieldset {
 }
 
 
-.view-icon-container {
-
-}
+.view-icon-container {}
 
 .product-list {
   width: 1200px;
@@ -778,7 +786,7 @@ fieldset {
 
 .pagination-link {
   display: block;
-  box-sizing:border-box;
+  box-sizing: border-box;
   color: #FFFFFF;
   width: 60px;
   height: 60px;
