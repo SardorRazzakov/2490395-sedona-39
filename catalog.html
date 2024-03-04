@@ -8,47 +8,47 @@
   </head>
 
   <body>
+    <div class="page-container">
+      <!--header-->
+      <header class="page-header">
+        <nav class="page-navigation">
+          <a class="navigation-logo" href="index.html">
+            <img class="header-logo" src="images/logo.svg" alt="Логотип сайта Седона" width="140" height="70">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="visually-hidden">12</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <!--header-->
-    <header class="page-header">
-      <nav class="page-navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="header-logo" src="images/logo.svg" alt="Логотип сайта Седона" width="140" height="70">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="visually-hidden">12</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <!--main-->
 
-    <!--main-->
+      <main class="main-inner main-container">
 
-    <main class="main-inner main-container">
-      <div class="page-container">
         <div class="sorting-container">
           <header class="inner-header">
 
@@ -75,7 +75,7 @@
               <div class="filtr-feildset-container">
                 <!--фильтр по типу инфраструктуры-->
 
-                <fieldset class="catalog-hotels-filter-group">
+                <fieldset class="catalog-hotels-filter-group filtr-infrastructure">
                   <legend class="catalog-hotels-filter-group-title">Инфраструктура</legend>
                   <ul class="catalog-hotels-filter-list">
                     <li class="catalog-hotels-filter-item">
@@ -97,7 +97,7 @@
                 </fieldset>
 
                 <!--фильтр по типу жилья-->
-                <fieldset class="catalog-hotels-filter-group">
+                <fieldset class="catalog-hotels-filter-group filtr-type-of-housing">
                   <legend class="catalog-hotels-filter-group-title">Тип жилья</legend>
                   <ul class="catalog-hotels-filter-list">
                     <li class="catalog-hotels-filter-item">
@@ -151,15 +151,21 @@
             <option value="popular">Сначала популярные</option>
           </select>
 
+          <!-- <div class="view-icon-container"> -->
+
           <a class="button button-view-icon-card-active button-view" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
+
           <a class="button button-view-icon-slide-show button-view" href="#">
             <span class="visually-hidden">Показать слайд-шоу</span>
           </a>
+
           <a class="button button-view-icon-list button-view" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
+
+          <!-- </div> -->
         </div>
 
         <!--список гостиниц Седоны -->
@@ -219,84 +225,89 @@
             <span class="visually-hidden">количество звезд отеля 2</span>
             <span class="visually-hidden">РЕЙТИНГ: 5,0</span>
           </li>
+
         </ul>
 
         <!--пагинация-->
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <span class="pagination-link more">...</span>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <span class="pagination-link more">...</span>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </div>
 
         <!--Подписка на рассылку-->
         <section class="page-subscription-inner">
-          <h2 class="page-subscription-title">Подпишитесь на рассылку</h2>
-          <p class="page-subscription-description">Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
-          <label class="visually-hidden" for="email">E-mail</label>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" type="email" id="email" name="subscription-mail" placeholder="Ваш e-mail" required>
-            <button class="button button-subscribe" type="submit">Подписаться</button>
-          </form>
-        </section>
-      </div>
-    </main>
-
-    <!--footer-->
-    <footer class="page-footer">
-      <div class="page-footer-container">
-        <section class="socials-media">
-          <h2 class="visually-hidden" hidden>Социальные медиа</h2>
-          <ul class="socials-media-list">
-            <li class="socials-media-item">
-              <a class="button-media" href="#">
-                <span class="visually-hidden">VK</span>
-              </a>
-            </li>
-            <li class="socials-media-item">
-              <a class="button-media" href="#">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="socials-media-item">
-              <a class="button-media" href="#">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-          </ul>
+          <div class="page-subscription-container">
+            <h2 class="page-subscription-title">Подпишитесь на рассылку</h2>
+            <p class="page-subscription-description">Только полезная информация и никакого спама, честное бойскаутское!
+            </p>
+            <label class="visually-hidden" for="email">E-mail</label>
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="field" type="email" id="email" name="subscription-mail" placeholder="Ваш e-mail" required>
+              <button class="button button-subscribe" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
 
-        <section class="contacts">
-          <h2 class="contact-title" hidden>Контакты</h2>
-          <address class="contacts-address">
-            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </section>
+      </main>
 
-        <section class="site">
-          <h2 class="visually-hidden" hidden>Сайт разработчика</h2>
-          <a href="https://htmlacademy.ru/">
-            <img class="logo-footer" src="images/logo-html-academy.svg" alt="Посетить сайт разработчика HTML Academy">
-          </a>
-        </section>
-      </div>
-    </footer>
+      <!--footer-->
+      <footer class="page-footer">
+        <div class="page-footer-container">
+          <section class="socials-media">
+            <h2 class="visually-hidden" hidden>Социальные медиа</h2>
+            <ul class="socials-media-list">
+              <li class="socials-media-item">
+                <a class="button-media" href="#">
+                  <span class="visually-hidden">VK</span>
+                </a>
+              </li>
+              <li class="socials-media-item">
+                <a class="button-media" href="#">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li class="socials-media-item">
+                <a class="button-media" href="#">
+                  <span class="visually-hidden">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
+          <section class="contacts">
+            <h2 class="contact-title" hidden>Контакты</h2>
+            <address class="contacts-address">
+              <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+          </section>
+
+          <section class="site">
+            <h2 class="visually-hidden" hidden>Сайт разработчика</h2>
+            <a href="https://htmlacademy.ru/">
+              <img class="logo-footer" src="images/logo-html-academy.svg" alt="Посетить сайт разработчика HTML Academy">
+            </a>
+          </section>
+        </div>
+      </footer>
+    </div>
   </body>
 
 </html>
