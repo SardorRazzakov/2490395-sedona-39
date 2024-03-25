@@ -160,6 +160,18 @@ body {
 }
 
 
+.navigation-link:hover {
+  color:#68A2CA;
+}
+
+.navigation-link:focus {
+  color:#68A2CA;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -168,6 +180,18 @@ body {
   left: 0;
   margin: auto;
   fill: #000000;
+}
+
+.navigation-icon:hover {
+  color:#68A2CA;
+}
+
+.navigation-icon:focus {
+  color:#68A2CA;
+}
+
+.navigation-icon:active {
+  opacity: 0.3;
 }
 
 
@@ -249,6 +273,7 @@ body {
 
 /*advantages title */
 .advantages-title {
+  position: relative;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -256,6 +281,21 @@ body {
   margin: 0;
   margin-bottom: 62px;
 }
+
+
+
+
+.advantages-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -20px;
+  left: 88px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 /*advantages description */
 .advantages-description {
@@ -543,6 +583,16 @@ body {
 }
 
 
+.button-media:hover,
+.button-media:focus {
+  color:rgba(104, 162, 202, 1);
+}
+
+.button-media:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
+
 .socials-media-icon {
   position: absolute;
   top: 0;
@@ -565,11 +615,27 @@ body {
 }
 
 
+.contacts-phone:hover,
+.contacts-phone:focus {
+  color: rgb(117, 97, 87, 1);
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .site {
   width: 130px;
 }
 
+.site-address:hover,
+.site-address:focus {
+  color: rgb(117, 97, 87, 1);
+}
 
+.site-address:active {
+  color: rgba(117, 97, 87, 0.3);
+}
 
 
 /* Catalog  */
@@ -966,6 +1032,28 @@ legend {
   text-align: center;
   border-radius: 5px;
 }
+
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+
 
 .pagination-current {
   background-color: #F2F2F2;
